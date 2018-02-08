@@ -46,7 +46,7 @@ int main() {
         printf("***********************************\n");
         printf("*  WSPOL Szczytno ssinf2017 gr I  *\n");
         printf("***********************************\n");
-        printf("*    Kalkulator Zwykły + - * /    *\n\n");
+        printf("*    Kalkulator Zwyk\210y + - * /    *\n\n");
         printf("Podaj pierwsz\245 liczb\251\n");
         scanf("%lf", &a);           //wpisanie z klaw, a następnie podanie do wybor
         printf("Podaj symbol dzialania matematycznego (+, -, *, /)\n");
