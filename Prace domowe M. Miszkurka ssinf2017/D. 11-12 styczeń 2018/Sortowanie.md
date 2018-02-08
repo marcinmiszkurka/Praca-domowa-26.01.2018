@@ -5,8 +5,23 @@ Polega na porównywaniu dwóch kolejnych elementów i zamianie ich kolejności, 
 
 
 # Sortowanie przez wybieranie
-(selection sort ) jedna z prostszych metod sortowania. Polega na wyszukaniu elementu mającego się znaleźć na żądanej pozycji i zamianie miejscami z tym, który jest tam obecnie. Operacja jest wykonywana dla wszystkich indeksów sortowanej tablicy. Algorytm przedstawia się następująco: wyszukaj minimalną wartość z tablicy spośród elementów od i do końca tablicy zamień wartość minimalną, z elementem na pozycji i gdy zamiast wartości minimalnej wybierana będzie maksymalna, wówczas tablica będzie posortowana od największego do najmniejszego elementu.
-Algorytm jest niestabilny. Przykładowa lista to: [2a,2b,1] → [1,2b,2a] (gdzie 2b=2a)
+(selection sort ) Sortowanie te polega na wyszukaniu najmniejszego elementu z całej tablicy i wstawieniu go na następny element posortowanej tablicy. Gdy najmniejszy element zamienimy na największy, wówczas tablica będzie posortowana od największego do najmniejszego elementu. 
+Przykład
+
+  void Sortowanie( int tab[], int size )
+{
+    int k;
+    for( int i = 0; i < size; i++ )
+    {
+        k = i;
+        for( int j = i + 1; j < size; j++ )
+        if( tab[ j ] < tab[ k ] )
+             k = j;
+        
+        swap( tab[ k ], tab[ i ] );
+    }
+}
+
 
 
 # Sortowanie przez wstawianie 
