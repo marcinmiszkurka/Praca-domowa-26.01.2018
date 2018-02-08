@@ -1,4 +1,4 @@
-﻿##Sortowanie bąbelkowe 
+﻿#Sortowanie bąbelkowe 
 
 (ang. bubble sort) prostametoda sortowania o złożoności czasowej i pamięciowej.
 Polega na porównywaniu dwóch kolejnych elementów i zamianie ich kolejności, jeżeli zaburza ona porządek, w jakim się sortuje tablicę. Sortowanie kończy się, gdy podczas kolejnego przejścia nie dokonano żadnej zmiany.
