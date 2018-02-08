@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <ctype.h>
 #define tekst 33
-int m;  // Zmienna globalna przechowujaca male litery
-int d;  // Zmienna globalna przechowujaca duze litery
+int m;               // Zmienna globalna przechowujaca male litery
+int d;              // Zmienna globalna przechowujaca duze litery
 const char tab[tekst] = "LORem ipSUm dOloR sIt aMeT eNiM.\n";
 void info(void)
 
@@ -19,7 +19,7 @@ void male ()
             m+= 1;
         }
     }
-    printf("%i malych liter\n",m );
+    printf("%i ma\210ych liter\n",m );
 }
 void duze ()
 {
@@ -30,7 +30,7 @@ void duze ()
             d+= 1;
         }
     }
-    printf("%i duzych liter\n",d );
+    printf("%i du\253ych liter\n",d );
 }
 int main ()
 {
