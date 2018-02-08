@@ -10,32 +10,32 @@ Przykład:<br>
 
 Unikniemy w ten sposób niespodzianek związanych z priorytetem operatorów :<br>
 
-<#include <stdio.h>
-<
-<#define SIX 1+5
-<#define NINE 8+1
-<
-<int main(void)
-<{
-<    printf("%d * %d = %d\n", SIX, NINE, SIX * NINE);
-<    return 0;
-<
-<}
+>#include <stdio.h>
+>
+>#define SIX 1+5
+>#define NINE 8+1
+>
+>int main(void)
+>{
+>    printf("%d * %d = %d\n", SIX, NINE, SIX * NINE);
+>    return 0;
+>
+>}
 
 Po skompilowaniu i uruchomieniu programu otrzymujemy:
 
-<6 * 9 = 42
+>6 * 9 = 42
 a powinno być:
 
-<6 * 9 = 54
+>6 * 9 = 54
 Przyczyną błędu jest interpretacja wyrażenia:
 
-<1+5*8+1
+>1+5*8+1
 Ze względu na brak nawiasów i priorytet operatorów (wyższy * niż +) jest to interpretowane jako:
 
-<1+(5*8)+1 
+>1+(5*8)+1 
 a nie jak:
 
-<(1+5)*(8+1)
+>(1+5)*(8+1)
 
 Jeśli w miejscu wartości znajduje się wyrażenie, to należy je umieścić w nawiasach.
