@@ -1,11 +1,22 @@
 # Sortowanie bąbelkowe 
 
-(ang. bubble sort) prostametoda sortowania o złożoności czasowej i pamięciowej.
-Polega na porównywaniu dwóch kolejnych elementów i zamianie ich kolejności, jeżeli zaburza ona porządek, w jakim się sortuje tablicę. Sortowanie kończy się, gdy podczas kolejnego przejścia nie dokonano żadnej zmiany.
+(ang. bubble sort) Sortowanie bąbelkowe jest bardzo łatwe - sprawdzamy czy następny element tablicy jest większy od aktualnego, jeżeli tak, to zamieniamy te elementy miejscami. Aby skrócić czas wykonywania całego algorytmu kosztem dłuższego czasu przejścia przez jedną pętlę, można utworzyć flagę przechowującą zmiany. Flaga jest zerowana na wejściu w pętli, w przpadku zmiany jest ona podnoszona. Po wykonaniu pętli sprawdzamy czy zaszła zmiana, jeżeli nie to kończymy sortowanie.<br> Przykład:<br>
+void Sortowanie( int tab[], int size )<br>
+{<br>
+    for( int i = 0; i < size; i++ )<br>
+    {<br>
+        for( int j = 0; j < size - 1; j++ )<br>
+        {<br>
+            if( tab[ j ] > tab[ j + 1 ] )<br>
+                 swap( tab[ j ], tab[ j + 1 ] );<br>
+            
+        }<br>
+    }<br>
+}<br>
 
 
 # Sortowanie przez wybieranie
-(selection sort ) Sortowanie te polega na wyszukaniu najmniejszego elementu z całej tablicy i wstawieniu go na następny element posortowanej tablicy. Gdy najmniejszy element zamienimy na największy, wówczas tablica będzie posortowana od największego do najmniejszego elementu. 
+(selection sort ) Sortowanie te polega na wyszukaniu najmniejszego elementu z całej tablicy i wstawieniu go na następny element posortowanej tablicy. Gdy najmniejszy element zamienimy na największy, wówczas tablica będzie posortowana od największego do najmniejszego elementu. <br>
 Przykład
 
 
