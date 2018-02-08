@@ -1,112 +1,49 @@
-﻿***************
-Praca domowa 	
+Praca domowa
 
 Notatka linux - podstawowe polecenia krok po kroku
----
+ Przejście do pulpitu cd Pulpit/
 
-=======================
-Przejście do pulpitu
-cd Pulpit/
-
-=======================
-Utworzenie katalogu
-mkdir first_repo  
+Utworzenie katalogu mkdir first_repo
 cd first_repo/
-
-=======================
-Instalacja git
-sudo apt-get update  
+Instalacja git sudo apt-get update
 sudo apt-get install git
 
-=======================
-Sprawdzenie wersji git
-git --version
+Sprawdzenie wersji git git --version
+Inicjalizacja repozytorium GIT w bieżącym katalogu git init
+Wyśliwtlenie zawartości aktualnego katalogu ls
 
-=======================
-Inicjalizacja repozytorium GIT w bieżącym katalogu
-git init
+Utworzenie pliku touch test.txt
+Edycja pliku nano test.txt
 
-=======================
-Wyśliwtlenie zawartości aktualnego katalogu
-ls
+dodanie plików (lub ich zmian) do repozytorium git (. - wszystkich) git add .
 
-=======================
-Utworzenie pliku
-touch test.txt
+Wyświetlenie listy zmienionych plików git status
 
-=======================
-Edycja pliku
-nano test.txt
+Konfiguracja git git config --global user.email "ntwój email"
+git config --global user.name "twój login"
 
-=======================
-dodanie plików (lub ich zmian) do repozytorium git (. - wszystkich)
-git add .
+Dodaje do commita wraz z komentarzem git commit -m "tworzenie nowego pliku"
 
-=======================
-Wyświetlenie listy zmienionych plików
-git status
+Sprawdzenie zmian git log
 
-=======================
-Konfiguracja git
-git config --global user.email "niechce@spamu.loc"  
-git config --global user.name "pawelz2017"
+Edycja pliku nano test.txt
 
+dodanie plików (lub ich zmian) do repozytorium git (. - wszystkich) git add .
 
-=======================
-Dodaje do commita wraz z komentarzem
-git commit -m "tworzenie nowego pliku"
+Dodaje do commita wraz z komentarzem git commit -m "pierwsza zmiana"
+Sprawdzenie zmian git log
+ Edycja pliku nano test.txt
 
+dodanie plików (lub ich zmian) do repozytorium git (. - wszystkich) git add .
 
-=======================
-Sprawdzenie zmian
-git log
+ Dodaje do commita wraz z komentarzem git commit -m "druga zmiana"
 
-=======================
-Edycja pliku
-nano test.txt
+Dodanie do git zdalnego repozytorium git remote add origin https://github.com/pawelz2017/test.git
 
-=======================
-dodanie plików (lub ich zmian) do repozytorium git (. - wszystkich)
-git add .
+Wysłanie zmienionych plików do zdalnego repozytorium git push -u origin master
 
-=======================
-Dodaje do commita wraz z komentarzem
-git commit -m "pierwsza zmiana"
-=======================
-Sprawdzenie zmian
-git log
+Kopiowanie danych z github git clone
 
-=======================
-Edycja pliku
-nano test.txt
+Ściągnięcie zmian z serwera do posiadanego już repo w folderze git pull
 
-=======================
-dodanie plików (lub ich zmian) do repozytorium git (. - wszystkich)
-git add .
-
-=======================
-Dodaje do commita wraz z komentarzem
-git commit -m "druga zmiana"
-
-
-=======================
-Dodanie do git zdalnego repozytorium
-git remote add origin https://github.com/pawelz2017/test.git
-
-=======================
-Wysłanie zmienionych plików do zdalnego repozytorium
-git push -u origin master
-
-=======================
-Kopiowanie danych z github
-git clone
-
-=======================
-Ściągnięcie zmian z serwera do posiadanego już repo w folderze
-git pull
-
-=======================
-dodajemy ignorowane pliki, rozszerzenia
-echo "*.o     #ignoruj wszystkie skompilowane pliki" >> .gitignore
-
-
+dodajemy ignorowane pliki, rozszerzenia echo "*.o #ignoruj wszystkie skompilowane pliki" >> .gitignore
