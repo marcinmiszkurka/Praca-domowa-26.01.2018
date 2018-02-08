@@ -1,36 +1,23 @@
 #include <stdio.h>
 
 double mnoz(double a, double b) {
-    printf("Wynik mnozenia: %lf\n", a * b);
+    printf("Wynik mno\253enia: %lf\n", a * b);
     return 0;
 }
-
 double dziel(double a, double b) {
     printf("Wynik dzielenia: %lf\n", a / b);
     return 0;
 }
-
 double dodaj(double a, double b) {
     printf("Wynik dodawania: %lf\n", a + b);
     return 0;
 }
-
 double odejmowanie(double a, double b) {
     printf("Wynik odejmowania: %lf\n", a - b);
     return 0;
 }
-
 double licz(double a, double b, char wybor) {
-
-    /*Wybor na podstawie IF
-    if(wybor == '+') dodaj(a,b);
-    else	if(wybor == '-') odejmowanie(a,b);
-    else	if(wybor == '*') mnoz(a,b);
-    else	if(wybor == '/') dziel(a,b);
-    else	printf("Dzialanie nie obslugiwane\n");
-    */
-
-    //Wybor na podstawie switch
+                                    //Wybor na podstawie switch
     switch (wybor) {
         case '+':
             dodaj(a, b);
@@ -46,38 +33,29 @@ double licz(double a, double b, char wybor) {
             break;
 
         default:
-            printf("Bledny wybor\n");
+            printf("B\210\251dny wyb\242r\n");
             break;
-
     }
-
     return 0;
-
-
 }
-
 int main() {
-
     double a, b;
     char wybor;
     int czy_dalej = 1;
-
     while (czy_dalej == 1) {
-
-
-        printf("Podaj pierwsza liczbe\n");
-        scanf("%lf", &a);    /*Odczytaj z konsoli i zapisz pod wybor*/
-
+        printf("***********************************\n");
+        printf("*  WSPOL Szczytno ssinf2017 gr I  *\n");
+        printf("***********************************\n");
+        printf("*    Kalkulator Zwykły + - * /    *\n\n");
+        printf("Podaj pierwsz\245 liczb\251\n");
+        scanf("%lf", &a);           //wpisanie z klaw, a następnie podanie do wybor
         printf("Podaj symbol dzialania matematycznego (+, -, *, /)\n");
-        scanf(" %c", &wybor);    /*Odczytaj z konsoli i zapisz pod wybor*/
+        scanf(" %c", &wybor);       //wpisanie z klaw, a następnie podanie do wybor
 
-        printf("Podaj druga liczbe\n");
-        scanf("%lf", &b);    /*Odczytaj z konsoli i zapisz pod wybor*/
-
+        printf("Podaj drug\245 liczbe\n");
+        scanf("%lf", &b);           //wpisanie z klaw, a następnie podanie do wybor
         licz(a, b, wybor);
-
-
-        printf("Czy chcesz dalej liczyc? (1 - tak / 0 - nie: ");
+        printf("Czy chcesz liczyc kolejne liczby? (1 - tak / 0 - nie: ");
         scanf("%i", &czy_dalej);
     }
 
