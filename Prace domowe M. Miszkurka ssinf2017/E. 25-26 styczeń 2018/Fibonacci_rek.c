@@ -1,7 +1,10 @@
 #include <stdio.h>
 
 void info() {
-    printf("Program wyswietlajacy liczby ciagu Fibonacciego - rekurencyjnie\n");
+    printf("***********************************\n");
+    printf("*  WSPOL Szczytno ssinf2017 gr I  *\n");
+    printf("***********************************\n\n");
+    printf("Program wy\230wietlaj\245cy liczby ci\245gu Fibonacciego - rekurencyjnie\n");
 }
 
 
@@ -12,16 +15,10 @@ int fibonacci(int n) {
 }
 
 int main() {
-
     int n;
-
-
-    printf("Podaj numer liczby z ciagu: ");
+    printf("Podaj numer liczby z ci\245gu: ");
     scanf("%i", &n);
-
-
-    printf("Wartosc wyrazu ciagu wynosi: %i\n", fibonacci(n));
-
+    printf("Warto\230206 wyrazu ci\245gu wynosi: %i\n", fibonacci(n));
 
     return 0;
 }
