@@ -10,13 +10,13 @@ Przykład
 
   void Sortowanie( int tab[], int size ) <BR>
   {<BR>
-  <li> int k; <BR>
-  <li><li>  for( int i = 0; i < size; i++ )<BR>
+ \t int k; <BR>
+  \tfor( int i = 0; i < size; i++ )<BR>
       {<BR>
-     <li><li>      k = i;<BR>
-    <li><li>       for( int j = i + 1; j < size; j++ )<BR>
-     <li><li>      if( tab[ j ] < tab[ k ] )<BR>
-     <li><li>           k = j;<BR>
+    \t      k = i;<BR>
+    \t       for( int j = i + 1; j < size; j++ )<BR>
+     \tif( tab[ j ] < tab[ k ] )<BR>
+     \t           k = j;<BR>
           
           swap( tab[ k ], tab[ i ] );<BR>
       }<BR>
