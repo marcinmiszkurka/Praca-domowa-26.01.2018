@@ -1,4 +1,4 @@
-# Prace_domowe_1_semestr
+# Prace_domowe_1_semestr_SSINF2017
 ###A. 19-20 październik 2017
 
 1. Notatka w MarkDown na GitHub opisująca wykonane ćwiczenia (środowisko pracy, linux - podstawowe polecenia, git, GitHub, gcc, pierwsze programy)
