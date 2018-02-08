@@ -24,18 +24,18 @@ Unikniemy w ten sposób niespodzianek związanych z priorytetem operatorów :<br
 
 Po skompilowaniu i uruchomieniu programu otrzymujemy:
 
->6 * 9 = 42
+>6 * 9 = 42<br>
 a powinno być:
 
->6 * 9 = 54
+>6 * 9 = 54<br>
 Przyczyną błędu jest interpretacja wyrażenia:
 
->1+5*8+1
+>1+5*8+1<br>
 Ze względu na brak nawiasów i priorytet operatorów (wyższy * niż +) jest to interpretowane jako:
 
->1+(5*8)+1 
+>1+(5*8)+1 <br>
 a nie jak:
 
->(1+5)*(8+1)
+>(1+5)*(8+1)<br>
 
 Jeśli w miejscu wartości znajduje się wyrażenie, to należy je umieścić w nawiasach.
