@@ -1,11 +1,11 @@
 # Prace_domowe_1_semestr_SSINF2017
-###A. 19-20 październik 2017
+### A. 19-20 październik 2017
 
 1. Notatka w MarkDown na GitHub opisująca wykonane ćwiczenia (środowisko pracy, linux - podstawowe polecenia, git, GitHub, gcc, pierwsze programy)
 2. Równanie kwadratowe - program w C
 
 
-###B. 23-24 listopad 2017
+### B. 23-24 listopad 2017
 
 1. Co to jest typ dwójkowy, ósemkowy, szesnastkowy? Jak reprezentowane są te typy w języku C? - notatka w MarkDown na GitHub
 2. Konwersja 10 <-> 2 oraz 2<->16 - notatka w MarkDown na GitHub
@@ -19,7 +19,7 @@
 2. Największy wspólny dzielnik - program w C
 
 
-###D. 11-12 styczeń 2018
+### D. 11-12 styczeń 2018
 
 1. Dlaczego dla preprocesingu w języku C używamy nadmiarowych nawiasów? - krótka notatka w MarkDown na GitHub
 2. Refactoring '04 krotnosc-malych-liter'
@@ -29,7 +29,7 @@
 (opcjonalnie) 6. Sortowanie z wykorzystaniem funkcji 'max' - program w C
 
 
-###E. 25-26 styczeń 2018
+### E. 25-26 styczeń 2018
 
 1. Największy wspólny dzielnik (Algorytm Euklidesa) - iteracyjnie - program w C (patrz grudzień pkt 2.)
 2. Największy wspólny dzielnik (Algorytm Euklidesa) - rekurencyjnie - program w C
