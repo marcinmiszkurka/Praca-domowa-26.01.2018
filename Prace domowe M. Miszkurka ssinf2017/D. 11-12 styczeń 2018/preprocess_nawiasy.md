@@ -1,5 +1,14 @@
-﻿#Dlaczego dla preprocesingu w języku C używamy nadmiarowych nawiasów?
+# Dlaczego dla preprocesingu w języku C używamy nadmiarowych nawiasów?
 
+Preprocesor jest to program, który analizuje plik źródłowy (programu, biblioteki) w poszukiwaniu wszystkich wyrażeń zaczynających się od "#". Na podstawie tych instrukcji generuje on kod w "czystym" języku C, który następnie jest kompilowany przez kompilator. Ponieważ za pomocą preprocesora można niemal "sterować" kompilatorem, daje on niezwykłe możliwości, które nie były dotąd znane w innych językach programowania.
+
+Przykład:<br>
+>#define LICZBA 8 - spowoduje, że każde wystąpienie słowa LICZBA w kodzie zostanie zastąpione ósemką.<br>
+>#define SUMA(a,b) ((a)+(b)) - spowoduje, że każde wystąpienie wywołania "funkcji" SUMA zostanie zastąpione przez sumę argumentów<br>
+>#define A  5<br>
+>#define B  ((2)+(A))<br>
+
+Jeśli w miejscu wartości znajduje się wyrażenie, to należy je umieścić w nawiasach.
 
 Makra preprocesora dokonują wymiany tekstu przed skompilowaniem kodu, co  SQR(b+5)przekłada się na (b + 5 * b + 5) = (6b + 5) = 6 * 3 + 5 = 23
 
