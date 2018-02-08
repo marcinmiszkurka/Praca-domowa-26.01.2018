@@ -49,7 +49,7 @@ int main() {
         printf("*    Kalkulator Zwyk\210y + - * /    *\n\n");
         printf("Podaj pierwsz\245 liczb\251\n");
         scanf("%lf", &a);           //wpisanie z klaw, a następnie podanie do wybor
-        printf("Podaj symbol dzialania matematycznego (+, -, *, /)\n");
+        printf("Jakie działanie chcesz wykona\206 (+, -, *, /)\n");
         scanf(" %c", &wybor);       //wpisanie z klaw, a następnie podanie do wybor
 
         printf("Podaj drug\245 liczbe\n");
