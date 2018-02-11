@@ -1,24 +1,34 @@
-szereg_Taylora_sin
-
 #include <stdio.h>
-                //liczy częstotliwość występowania litery w tablicy
-int main() {
-    const char ciag_zn []="Ala ma kota ";
-    int histogram [26]={0};
-    char znak;
-    int licznik=0;
+#include <stdlib.h>
+#define DOKLADNOSC 20
 
-    while( (znak=ciag_zn[licznik]) !=0) 
-    {
-        if ((znak>= 'a') &&(znak<='z'))
-        {
-            ++histogram[znak-'a']; //zlicz
+void info(void)
+{
+    printf("=================================\n");
+    printf("==    SIN(X)WSPOL ssinf2017    ==\n");
+    printf("=================================\n");
+}
+int main(int liczba_slow, char* tablica_slow[]){
+    info();
+    double x;
+    double wynik=0.0;
+    double silnia=1.0;
+    double potega_x=1.0;
+
+    if(liczba_slow==2){
+        x=atof(tablica_slow[1]);
+        for(int licznik=1;licznik<DOKLADNOSC*2;++licznik){
+            potega_x*=x;
+            silnia*=licznik;
+            if(((licznik+1)%4)==0)
+                wynik-=potega_x/silnia;
+            else if(((licznik-1)%4)==0)
+                wynik+=potega_x/silnia;
         }
-        ++licznik;
+        printf("Wynik: %lf\n",wynik);
+    }else{
+        printf("Niepoprawna liczba parametrow!\n");
     }
-    for(int x=0; x<26; ++x)
-    {
-        printf("%c -> %d,\n", 'a' + x, histogram[x]);
-    }
+
     return 0;
 }
